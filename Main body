@@ -1,0 +1,21 @@
+# A program to remind the user to take a break from their computer every 2 hours
+# the reminding prompt is a music video from YouTube 
+import webbrowser
+import time 
+
+# repeat this reminder every (test) 5 seconds 
+
+total_breaks = 3
+breaks_taken = 0
+url = "https://www.youtube.com/watch?v=qUmYnnVsqao"
+
+print("This program started on " + time.ctime())
+while (breaks_taken < total_breaks):
+    time.sleep(5)
+    breaks_taken = breaks_taken + 1
+    webbrowser.open(url)
+
+# close the browser 
+
+# automate the running of this program when the computer is turned on
+# in a way that only needs the terminal and not WING or IDLE 
