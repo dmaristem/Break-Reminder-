@@ -19,3 +19,6 @@ while (breaks_taken < total_breaks):
 
 # automate the running of this program when the computer is turned on
 # in a way that only needs the terminal and not WING or IDLE 
+# soln: use Task Scheduler 
+
+# Note: initial project idea from Udacity Course "Programming Foundations with Python"
