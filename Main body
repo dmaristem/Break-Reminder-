@@ -1,17 +1,17 @@
-# A program to remind the user to take a break from their computer every 2 hours
+# A program to remind the user to take a break from their computer every hour
 # the reminding prompt is a music video from YouTube 
 import webbrowser
 import time 
 
-# repeat this reminder every (test) 5 seconds 
+# REPEAT every hour
 
-total_breaks = 3
+total_breaks = 12
 breaks_taken = 0
-url = "https://www.youtube.com/watch?v=qUmYnnVsqao"
+url = "https://www.youtube.com/watch?v=t6f80tQ3WRM"
 
 print("This program started on " + time.ctime())
 while (breaks_taken < total_breaks):
-    time.sleep(5)
+    time.sleep(3600)
     breaks_taken = breaks_taken + 1
     webbrowser.open(url)
 
@@ -19,6 +19,6 @@ while (breaks_taken < total_breaks):
 
 # automate the running of this program when the computer is turned on
 # in a way that only needs the terminal and not WING or IDLE 
-# soln: use Task Scheduler 
+# soln: use Task Scheduler; python script is run when I log on 
 
 # Note: initial project idea from Udacity Course "Programming Foundations with Python"
